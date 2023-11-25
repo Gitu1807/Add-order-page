@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land of Boxes Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .form-group button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Land of Boxes Order Form</h2>
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Price (R)</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>EconoBox</td>
+                <td>001</td>
+                <td>5</td>
+                <td><input type="number" name="quantity_econo" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Standard Box</td>
+                <td>002</td>
+                <td>10</td>
+                <td><input type="number" name="quantity_standard" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Premium Box</td>
+                <td>003</td>
+                <td>15</td>
+                <td><input type="number" name="quantity_premium" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Deluxe Box</td>
+                <td>004</td>
+                <td>20</td>
+                <td><input type="number" name="quantity_deluxe" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Super Deluxe Box</td>
+                <td>005</td>
+                <td>30</td>
+                <td><input type="number" name="quantity_super_deluxe" min="0" value="0"></td>
+            </tr>
+        </table>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit_card">Credit Card</option>
+                <!-- Add more payment options if needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="expiry_date">Expiry Date:</label>
+            <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YYYY" required>
+        </div>
+
+        <div class="form-group">
+            <label for="billing_address">Billing Address:</label>
+            <input type="text" id="billing_address" name="billing_address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="delivery_address">Delivery Address:</label>
+            <input type="text" id="delivery_address" name="delivery_address" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Place Order</button>
+        </div>
+    </form>
+</body>
+</html>
